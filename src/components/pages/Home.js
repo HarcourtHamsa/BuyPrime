@@ -203,7 +203,7 @@ class Home extends Component {
                                     <h3>Fashion</h3>
                                     <p>
                                         Buy data plans at best rates no matter
-                                        your network
+                                        your network.
                                 </p>
                                     <Link to="/" className="btn btn-warning">Start now</Link>
                                 </div>
