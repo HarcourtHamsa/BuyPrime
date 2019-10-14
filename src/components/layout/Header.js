@@ -20,16 +20,13 @@ function Header() {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarCollapse">
-                    <div className="navbar-nav">
+                    <div className="navbar-nav ml-auto">
                         <Link to="/" className="nav-item nav-link active">Home</Link>
-                        <Link to="/about" className="nav-item nav-link">About</Link>
-                        <Link to="/" className="nav-item nav-link">Pricing</Link>
+                        <Link to="/pricing" className="nav-item nav-link">Pricing</Link>
                         <Link to="/faq" className="nav-item nav-link">FAQ's</Link>
                         <Link to="/login" className="nav-item nav-link">Login</Link>
+                        <Link to="/register" className="nav-item nav-link btn btn-success border-rounded" style={{ color: 'white' }}>Create free account</Link>
 
-                    </div>
-                    <div className="navbar-nav ml-auto">
-                        <Link to="/" className="nav-item nav-link btn btn-success border-rounded" style={{ color: 'white' }}>Create free account</Link>
                     </div>
                 </div>
             </nav>

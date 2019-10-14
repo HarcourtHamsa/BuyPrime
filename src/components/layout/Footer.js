@@ -6,23 +6,20 @@ function Footer() {
             <div className="row mt-5 ">
                 <div className="col-sm">
                     <h1>Buy<span style={logoStyle}>Prime</span></h1>
-                    <p>Paystack is a technology company solving payments problems for ambitious businesses.
-                        Our mission is to help businesses in Africa become profitable, envied, and loved.
-                    </p>
-                    <span><a href="/">Home</a></span><br/>
-                    <span><a href="/">About</a></span><br/>
-                    <span><a href="/">Pricing</a></span><br/>
-                    <span><a href="/">Register</a></span><br/>
+                    <p>Phone: 09066686754</p>
+                    <p>Email: joshuamivobua@gmail.com</p>
+                    <a className="btn btn-warning mt-1" href="/">Contact us</a>
                 </div>
                 <div className="col-sm">
                     <form>
                         <div className="form-group">
-                            <label htmlFor="email">SUBSCRIBE TO OUR NEWSLETTER</label>
+                            <label htmlFor="email">SUBSCRIBE TO OUR NEWSLETTER AND BE THE FIRST TO GET NOTIFIED
+                            ON ANY DISCOUNTS AND PROMOS</label>
                             <input type="email" className="form-control" id="email" placeholder="Email Address"/>
                         </div>
                         <button type="submit" className="btn btn-success">Subscribe</button>
                     </form>
-                    <div className=" ">
+                    <div>
                                 <i className="fas fa-facebook" />
                                 <i className="fas fa-twitter" />
                                 <i className="fas fa-instagram" />
