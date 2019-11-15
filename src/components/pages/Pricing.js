@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from "../layout/Footer";
+import Header from '../layout/Header';
 
 function Pricing() {
     return (
         <div className="bg-light">
+            <Header />
             <section className="pricing py-5">
                 <div className="container">
                     <div className="row">
@@ -72,6 +75,7 @@ function Pricing() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

@@ -1,9 +1,12 @@
 import React from 'react'
 import "./NotFound.css"
+import Footer from "../layout/Footer";
+import Header from '../layout/Header';
 
 export default function NotFound() {
     return (
         <div>
+            <Header />
             <div id="notfound">
                 <div className="notfound">
                     <div className="notfound-404">
@@ -14,6 +17,7 @@ export default function NotFound() {
                     <a href="/" >Go To Homepage</a>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

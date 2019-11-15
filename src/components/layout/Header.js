@@ -25,7 +25,7 @@ function Header() {
                         <Link to="/pricing" className="nav-item nav-link">Pricing</Link>
                         <Link to="/faq" className="nav-item nav-link">FAQ's</Link>
                         <Link to="/login" className="nav-item nav-link">Login</Link>
-                        <Link to="/register" className="nav-item nav-link btn btn-success border-rounded" style={{ color: 'white' }}>Create free account</Link>
+                        <Link to="/register" className="nav-item nav-link btn btn-warning pl-5 pr-5 rounded-0" style={{ color: 'white' }}>Create free account</Link>
 
                     </div>
                 </div>
@@ -44,8 +44,7 @@ const logoStyle = {
 const navStyle = {
     top: '-100px', /* Hide the navbar 50 px outside of the top view */
     width: '100%', /* Full width */
-    transition: 'top 0.3s' ,
-    opacity: '0.9'
+    transition: 'top 0.1s' ,
     
 }
 
