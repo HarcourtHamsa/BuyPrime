@@ -374,3 +374,31 @@ li {
 }
 
 /*  Dashboard css */
+
+.peach-gradient{
+  background: linear-gradient(to right, #e44d2c, #f16529);
+  border-radius: 3em;
+  color: #fff;
+}
+
+.yellow-gradient{
+  background: linear-gradient(to right, #fdc830, #f37335, #f27121);
+}
+
+.blue-gradient{
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+}
+
+.nelson-gradient{
+  background: linear-gradient(to right, #f2709c, #ff9472);
+}
+
+.orange-gradient{
+  background: linear-gradient(to right, #FF8008, #FFC837);
+}
+
+
+.btn-rounded{
+  border-radius: 3em;
+}
+

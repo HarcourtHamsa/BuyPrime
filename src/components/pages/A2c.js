@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
 import DashboardNav from '../layout/DashboardNav'
 
-class Bills extends Component {
+class A2c extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <DashboardNav />
-                <div className="container">
-                    {/* <!-- Default form contact --> */}
+                <div className="ml-5 container mt-5">
+                    <p className="h4 text-center mb-5"><i className="fa fa-fw fa-refresh"></i><b>Convert airtime to cash</b></p>
+
                     <form class="text-center border border-light p-5" action="#!">
-
-                        <p class="h4 mb-4"><i className="fa fa-fw fa-money"></i><b>Bills Payment</b></p>
-
                         {/* <!-- Amount --> */}
                         <input type="text" id="defaultContactFormAmount" class="form-control mb-4" placeholder="Amount" />
                         {/* 
@@ -22,16 +20,14 @@ class Bills extends Component {
                             <option value="4">GoTv</option>
                             <option value="5">NEPA</option>
                         </select>
-
                         {/* <!-- Send button --> */}
-                        <button class="btn btn-outline-warning rounded-0 pl-5 pr-5" type="submit">PAY BILL</button>
-
+                        <button class="btn btn-outline-warning rounded-0 pl-5 pr-5" type="submit">CONVERT</button>
                     </form>
                     {/* <!-- Default form contact --> */}
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
 
-export default Bills
+export default A2c

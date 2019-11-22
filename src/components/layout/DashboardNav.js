@@ -24,7 +24,7 @@ class DashboardNav extends React.Component {
 
         firebase.logout();
 
-        this.setState({isLoggedIn: false})
+        this.setState({ isLoggedIn: false })
     }
     //life cycle method
     render() {
@@ -52,10 +52,18 @@ class DashboardNav extends React.Component {
                         </NavItem>
                         <NavItem eventKey="user">
                             <NavIcon>
-                                <Link to="/dashboard/profile" className="fa fa-fw fa-user" style={{ fontSize: '1.75em' }} />
+                                <Link to="/dashboard/profile" className="fa fa-fw fa-address-book" style={{ fontSize: '1.75em' }} />
                             </NavIcon>
                             <NavText>
                                 <Link to="/dashboard/profile"> Profile </Link>
+                            </NavText>
+                        </NavItem>
+                        <NavItem eventKey="user">
+                            <NavIcon>
+                                <Link to="/dashboard/history" className="fa fa-fw fa-history" style={{ fontSize: '1.75em' }} />
+                            </NavIcon>
+                            <NavText>
+                                <Link to="/dashboard/history"> Transaction History </Link>
                             </NavText>
                         </NavItem>
                         <NavItem eventKey="user">
@@ -75,6 +83,14 @@ class DashboardNav extends React.Component {
                         </NavItem>
                         <NavItem eventKey="user">
                             <NavIcon>
+                                <Link to="/dashboard/a2c" className="fa fa-fw fa-refresh" style={{ fontSize: '1.75em' }} />
+                            </NavIcon>
+                            <NavText>
+                                <Link to="/dashboard/a2c">Airtime to cash</Link>
+                            </NavText>
+                        </NavItem>
+                        <NavItem eventKey="user">
+                            <NavIcon>
                                 <Link to="/dashboard/topup" className="fa fa-fw fa-angle-double-up" style={{ fontSize: '1.75em' }} />
                             </NavIcon>
                             <NavText>
@@ -82,18 +98,14 @@ class DashboardNav extends React.Component {
                             </NavText>
                         </NavItem>
 
-                        <NavItem eventKey="setting">
+                        <NavItem eventKey="user">
                             <NavIcon>
-                                <i className="fa fa-fw fa-gear" style={{ fontSize: '1.75em' }} />
+                                <Link to="/ " className="fa fa-fw fa-arrow-circle-left" style={{ fontSize: '1.75em' }}
+                                    onClick={this.onClickLogout} />
                             </NavIcon>
                             <NavText>
-                                Settings
-                                 </NavText>
-                            <NavItem eventKey="setting/logout">
-                                <NavText>
-                                    <Link to="/" onClick={this.onClickLogout}> Log out </Link>
-                                </NavText>
-                            </NavItem>
+                                <Link to="/" onClick={this.onClickLogout}> Logout </Link>
+                            </NavText>
                         </NavItem>
                     </SideNav.Nav>
                 </SideNav>
