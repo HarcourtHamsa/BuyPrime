@@ -33,7 +33,7 @@ function App() {
               <Route exact path="/pricing" component={Pricing} />
               <Route exact path="/register" component={UserIsNotAuthenticated(Register)} />
               <Route exact path="/dashboard" component={UserIsAuthenticated(Dashboard)} />
-              <Route exact path="/dashboard/wallets" component={UserIsAuthenticated(Wallet)} />
+              <Route exact path="/dashboard/wallet" component={UserIsAuthenticated(Wallet)} />
               <Route exact path="/dashboard/profile" component={UserIsAuthenticated(UserProfile)} />
               <Route exact path="/dashboard/topup" component={UserIsAuthenticated(Topup)} />
               <Route exact path="/dashboard/bills" component={UserIsAuthenticated(Bills)} />
