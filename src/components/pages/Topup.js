@@ -17,7 +17,7 @@ class Topup extends Component {
                         {/* <!-- Content Column --> */}
                         <div class="col-lg-8 mb-4 ">
                             <div class="card mt-3 tab-card shadow">
-                                <div class="card-header tab-card-header">
+                                <div class=" tab-card-header">
                                     <ul class="nav nav-tabs card-header-tabs bg-light" id="myTab" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="false">Airtime purchase</a>

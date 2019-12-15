@@ -24,13 +24,13 @@ class DashboardNav extends React.Component {
         styles={{ sidebar: { background: "white" } }}
       >
 
-        <div className="p-3 blue-gradient text-white mb-5">
-          <span className=" mr-2 h4 font-weight-bold">Logo</span>
+        <div className="p-3 yellow-gradient shadow text-white mb-5">
+          <span className=" mr-2 h6 font-weight-bold">BuyPrime</span>
           <i onClick={() => this.onSetSidebarOpen(true)} className="fa fa-align-right h4">
           </i>
 
           <span className="float-right">
-          <span className=" pr-2 font-weight-bold">Balance: $40,000 </span>
+          <span className=" pr-2 font-weight-bold">Balance: N40,000 </span>
             <i className="fa h4 fa-fw pr-2 fa-envelope" />
             <i className="fa h4 fa-fw fa-bell" />
             

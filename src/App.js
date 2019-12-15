@@ -18,6 +18,8 @@ import Topup from './components/pages/Topup'
 import Bills from './components/pages/Bills'
 import A2c from './components/pages/A2c'
 import History from './components/pages/History'
+import Bitcoin from './components/pages/Bitcoin'
+import Giftcard from './components/pages/Giftcard'
 
 
 
@@ -38,6 +40,8 @@ function App() {
               <Route exact path="/dashboard/topup" component={UserIsAuthenticated(Topup)} />
               <Route exact path="/dashboard/bills" component={UserIsAuthenticated(Bills)} />
               <Route exact path="/dashboard/a2c" component={UserIsAuthenticated(A2c)} />
+              <Route exact path="/dashboard/bitcoin" component={UserIsAuthenticated(Bitcoin)} />
+              <Route exact path="/dashboard/giftcards" component={UserIsAuthenticated(Giftcard)} />
               <Route exact path="/dashboard/history" component={UserIsAuthenticated(History)} />
               <Route component={NotFound} />
             </Switch>

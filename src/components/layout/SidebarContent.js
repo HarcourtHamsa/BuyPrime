@@ -22,24 +22,30 @@ class SidebarContent extends React.Component {
 
                 {/* <!-- Sidebar --> */}
                 <div class="border-right p-3" id="sidebar-wrapper">
-                    <div class="sidebar-heading mt-3 font-weight-bold h3 text-primary">Logo</div>
+                    <div class="sidebar-heading mt-3 font-weight-bold h3 text-primary">BuyPrime</div>
                     <div class="list-group list-group-flush text-primary">
-                        <Link to="/dashboard" class="mb-3 pl-5 pr-5 list-group-item list-group-item-action ">
+                        <Link to="/dashboard" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action ">
                         <i className="fa fa-dashboard h4 text-left" /> Dashboard</Link>
 
-                        <Link to="/dashboard/history" class="mb-3 pl-5 pr-5 list-group-item list-group-item-action">
+                        <Link to="/dashboard/history" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
                         <i className="fa fa-calendar h4" /> Transactions</Link>
 
-                        <Link to="/dashboard/wallet" class="mb-3 pl-5 pr-5 list-group-item list-group-item-action">
+                        <Link to="/dashboard/wallet" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
                         <i className="fa fa-wallet h4" /> Wallet</Link>
 
-                        <Link to="/dashboard/topup" class="mb-3 pl-5 pr-5 list-group-item list-group-item-action">
+                        <Link to="/dashboard/topup" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
                         <i className="fa fa-signal h4" /> Data & Airtime</Link>
 
-                        <Link to="/dashboard/bills" class="mb-3 pl-5 pr-5 list-group-item list-group-item-action">
+                        <Link to="/dashboard/bills" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
                         <i className="fa fa-money h4" /> Bills Payment</Link>
 
-                        <Link to="/dashboard/profile" class="mb-3 pl-5 pr-5 list-group-item list-group-item-action">
+                        <Link to="/dashboard/bitcoin" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
+                        <i className="fa fa-bitcoin h4" /> Bitcoin</Link>
+
+                        <Link to="/dashboard/giftcards" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
+                        <i className="fa fa- h4" /> Gift cards</Link>
+
+                        <Link to="/dashboard/profile" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
                         <i className="fa fa-user h4" /> Profile</Link>
 
                         <Link to="/" class="pl-5 pr-5 list-group-item list-group-item-action" onClick={this.onClickLogout}>
