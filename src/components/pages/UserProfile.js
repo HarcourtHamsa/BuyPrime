@@ -14,26 +14,26 @@ class UserProfile extends Component {
                     <div class="row">
                         <div class="col-lg-8 mb-4">
                             <form class=" border border-light p-5 shadow" action="#!">
-                                <div className="form-row">
-                                    <div className="col col-md-6 mb-4">
+                                <div className="form">
+                                    <div className="col col-sm-6 mb-4">
                                         <input
                                             type="text"
                                             placeholder="First Name"
                                             className="form-control" />
                                     </div>
-                                    <div className="col col-md-6 mb-4">
+                                    <div className="col col-sm-6 mb-4">
                                         <input
                                             type="text"
                                             placeholder="Last Name"
                                             className="form-control" />
                                     </div>
-                                    <div className="col col-md-6 mb-4">
+                                    <div className="col col-sm-6 mb-4">
                                         <input
                                             type="text"
                                             placeholder="Account no"
                                             className="form-control" />
                                     </div>
-                                    <div className="col col-md-6 mb-4">
+                                    <div className="col col-sm-6 mb-4">
                                         <input
                                             type="text"
                                             placeholder="Phone no"
@@ -49,7 +49,7 @@ class UserProfile extends Component {
                                 </select>
                                 <textarea
                                     rows="5"
-                                    cols="50"
+                                    
                                     placeholder="About(optional)" />
 
                                 <button class="btn btn-primary font-weight-bold btn-block mt-3" type="submit">Update</button>

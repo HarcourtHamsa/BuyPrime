@@ -21,10 +21,10 @@ class DashboardNav extends React.Component {
         sidebar={<SidebarContent />}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
-        styles={{ sidebar: { background: "white" } }}
+        styles={{ sidebar: { width: "260px" } }}
       >
 
-        <div className="p-3 yellow-gradient shadow text-white mb-5">
+        <div className="p-3 orange-gradient shadow text-white mb-5">
           <span className=" mr-2 h6 font-weight-bold">BuyPrime</span>
           <i onClick={() => this.onSetSidebarOpen(true)} className="fa fa-align-right h4">
           </i>

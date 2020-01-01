@@ -47,15 +47,16 @@ class Register extends Component {
             <div className="bg-light">
                 <div className="container">
                     <div className="row">
+                        <p className="text-primary small font-weight-bold mt-5">
+                            <Link to="/">&#186; Back to home</Link></p>
+
                         <div className="col-lg-10 col-xl-9 mx-auto">
-                            <div className="card card-signin flex-row my-5" >
-                                <div className="card-body" style={{ borderStyle: "dashed" }}>
+                            <div className="card card-signin flex-row my-5 shadow" >
+                                <div className="card-body">
                                     {message ?
                                         <Alert message={message} messageType={messageType} /> :
                                         null}
                                     <p className="h2 text-center mt-2"><b><span style={logoStyle}>Buy</span>Prime &trade;</b></p>
-
-                                    <h6 className="card-title text-center">Register</h6>
                                     <form className="form-signin" onSubmit={this.handleSubmit}>
                                         <label htmlFor="inputUserame">Username</label>
                                         <div className="form-label-group">
@@ -108,8 +109,8 @@ class Register extends Component {
 
                                         </div>
 
-                                        <button className="btn btn-warning rounded-0 btn-block text-uppercase" type="submit">Register</button>
-                                        <Link className="d-block text-center mt-2 small" to="/login">Sign In</Link>
+                                        <button className="btn btn-primary font-weight-bold shadow pl-5 pr-5" type="submit">Register</button><br />
+                                        <small>Already have an account? <Link to="/login">Sign in</Link></small>
 
                                     </form>
                                 </div>

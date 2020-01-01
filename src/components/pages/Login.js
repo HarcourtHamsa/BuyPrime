@@ -4,7 +4,7 @@ import { compose } from 'redux'
 import { connect } from "react-redux"
 import { firebaseConnect } from 'react-redux-firebase'
 import Footer from '../layout/Footer'
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import { notifyUser } from '../../actions/notifyAction'
 import Alert from "../layout/Alert"
 
@@ -47,14 +47,16 @@ class Login extends Component {
                 <div className="container mb-5">
                     <div className="container">
                         <div className="row">
+                            <p className="text-primary small font-weight-bold mt-5">
+                                <Link to="/">&#186; Back to home</Link></p>
+
                             <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
                                 <div class="card card-signin my-5">
-                                    <div className="card-body" style={{ borderStyle: "dashed" }}>
+                                    <div className="card-body">
                                         {message ?
                                             <Alert message={message} messageType={messageType} /> :
                                             null}
-                                        <p className="h2 text-center mt-2"><b><span style={logoStyle}>Buy</span>Prime &trade;</b></p>
-                                        <p className="card-title text-center h6"><b>Secure Login</b></p>
+                                        <p className="h3 text-center mt-2"><b><span style={logoStyle}>Buy</span>Prime &trade;</b></p>
                                         <form className="form-signin" onSubmit={this.handleSubmit}>
                                             <label htmlFor="inputEmail">Email address</label>
                                             <div className="form-label-group">
@@ -88,8 +90,9 @@ class Login extends Component {
                                                     id="customCheck1" />
                                                 <label className="custom-control-label" htmlFor="customCheck1">Remember password</label>
                                             </div>
-                                            <button className="btn  btn-warning btn-block text-uppercase rounded-0" type="submit">Sign in</button>
+                                            <button className=" pl-5 pr-5 btn text-white orange-gradient shadow font-weight-bold" type="submit">Sign in &#187;</button>
                                         </form>
+                                        <small>Don't have an account? <Link to="/register">Register</Link></small>
                                     </div>
                                 </div>
                             </div>

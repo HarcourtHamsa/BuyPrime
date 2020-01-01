@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
 import { compose } from "redux"
@@ -7,50 +7,58 @@ import { firebaseConnect } from "react-redux-firebase"
 
 
 class SidebarContent extends React.Component {
-    state = {}
+    state = {
+        isLoggedOut: false
+    }
 
     onClickLogout = (e) => {
         e.preventDefault()
+
+        this.setState({ isLoggedOut: !(this.state.isLoggedOut) })
 
         const { firebase } = this.props
         firebase.logout()
     }
 
     render() {
+        const { isLoggedOut } = this.state
+
+        if (isLoggedOut) {
+            return <Redirect to="/" />
+        }
+
         return (
-            <div class="d-flex" id="wrapper">
+            <div class="d-flex bg-light" id="wrapper">
 
                 {/* <!-- Sidebar --> */}
-                <div class="border-right p-3" id="sidebar-wrapper">
-                    <div class="sidebar-heading mt-3 font-weight-bold h3 text-primary">BuyPrime</div>
-                    <div class="list-group list-group-flush text-primary">
-                        <Link to="/dashboard" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action ">
-                        <i className="fa fa-dashboard h4 text-left" /> Dashboard</Link>
+                <div class=" p-3" id="sidebar-wrapper">
+                    <div class="sidebar-heading mt-1 font-weight-bold h3 text-primary">BuyPrime</div>
 
-                        <Link to="/dashboard/history" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa-calendar h4" /> Transactions</Link>
+                    <ul className="font-weight-bold text-white">
+                        <li className="p-3">
+                            <Link to="/dashboard">Dashboard</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/profile">Profile</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/topup">Airtime & Data</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/bills">Pay Bills</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/wallet">Fund Wallet</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/bitcoin">Bitcoin</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/giftcards">Gift cards</Link></li>
+                        <li className="p-3">
+                            <Link to="/dashboard/history">Transactions</Link></li>
+                        <li className="p-3">
+                            <Link to="/" onClick={this.onClickLogout}>Log out</Link></li>
 
-                        <Link to="/dashboard/wallet" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa-wallet h4" /> Wallet</Link>
+                        <p className="fixed-bottom">Copyright&copy; of BuyPrime</p>
+                    </ul>
 
-                        <Link to="/dashboard/topup" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa-signal h4" /> Data & Airtime</Link>
 
-                        <Link to="/dashboard/bills" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa-money h4" /> Bills Payment</Link>
 
-                        <Link to="/dashboard/bitcoin" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa-bitcoin h4" /> Bitcoin</Link>
-
-                        <Link to="/dashboard/giftcards" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa- h4" /> Gift cards</Link>
-
-                        <Link to="/dashboard/profile" class="mb-1 pl-5 pr-5 list-group-item list-group-item-action">
-                        <i className="fa fa-user h4" /> Profile</Link>
-
-                        <Link to="/" class="pl-5 pr-5 list-group-item list-group-item-action" onClick={this.onClickLogout}>
-                        <i className="fa fa-power-off h4" /> Logout</Link>
-                    </div>
                 </div>
             </div>
         )

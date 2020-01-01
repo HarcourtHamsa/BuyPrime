@@ -13,7 +13,7 @@ function Header() {
     }
     return (
         <div>
-            <nav className="navbar navbar-expand-md navbar-light bg-light p-3 fixed-top" id="navbar" style={navStyle}>
+            <nav className="navbar navbar-expand-md navbar-light shadow bg-light p-3 fixed-top" id="navbar" style={navStyle}>
                 <Link to="/" className="navbar-brand">Buy<span style={logoStyle}>Prime</span></Link>
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span className="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@ function Header() {
                         <Link to="/pricing" className="nav-item nav-link">Pricing</Link>
                         <Link to="/faq" className="nav-item nav-link">FAQ's</Link>
                         <Link to="/login" className="nav-item nav-link">Login</Link>
-                        <Link to="/register" className="nav-item nav-link btn btn-warning pl-5 pr-5 rounded-0" style={{ color: 'white' }}>Create free account</Link>
+                        <Link to="/register" className="nav-item nav-link btn btn-success shadow pl-5 pr-5 font-weight-bold" style={{ color: 'white' }}>Create free account</Link>
 
                     </div>
                 </div>

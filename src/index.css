@@ -395,39 +395,56 @@ li {
 }
 
 .orange-gradient {
-  background: linear-gradient(to right, #ff8008, #ffc837);
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 }
 
 .btn-rounded {
   border-radius: 3em;
 }
 
-.height{
+.height {
   height: 400px;
 }
 
-.icons{
+.icons {
   position: absolute;
   top: 0;
   right: 10px;
 }
 
-.border-left-success{
+.border-left-success {
   border-left: 3px solid green;
 }
 
-.border-left-primary{
+.border-left-primary {
   border-left: 3px solid lightskyblue;
 }
 
-.border-left-danger{
+.border-left-danger {
   border-left: 3px solid red;
 }
 
-.border-left-warning{
-  border-left: 3px solid orange
+.border-left-warning {
+  border-left: 3px solid orange;
 }
 
-.space{
+.space {
   margin-bottom: 2em;
+}
+
+.wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: orangered;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./components/pages/meghan-schiereck-_XFObcM_7KU-unsplash.jpg");
+  /* background: linear-gradient(rgba(0,0,0,0.5)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: whitesmoke;
 }

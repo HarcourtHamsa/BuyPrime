@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className="text-muted p-3" style={{backgroundColor: "black"}}>
+        <div className=" p-3 bg-light" style={{}}>
             <div className="row mt-5 ">
                 <div className="col-sm">
                     <h1>Buy<span style={logoStyle}>Prime</span></h1>
